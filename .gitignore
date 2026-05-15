@@ -1,0 +1,33 @@
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model files
+models/
+*.pth
+
+# Temporary images/files
+temp_*.jpg
+temp_*.png
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+
+# Large dataset/cache files
+.cache/
+datasets/
+
+# Generated outputs
+outputs/
+results/
