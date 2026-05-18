@@ -82,9 +82,8 @@ Prediction (AI / Real)
 
 ## Dataset Used
 
-```text
-Parveshiiii/AI-vs-Real
-```
+- **AI-vs-Real** dataset from Hugging Face
+- Source: `Parveshiiii/AI-vs-Real`
 
 ## Dataset Processing
 
@@ -109,19 +108,9 @@ The following forensic representations are extracted from the input image during
 
 <br>
 
-<p align="center">
-  <img src="readme_images/FFT.png" width="250"/>
-  <img src="readme_images/Noise.png" width="250"/>
-  <img src="readme_images/ELA.png" width="250"/>
-</p>
-
-<p align="center">
-  <b>FFT Analysis</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Noise Residual</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>ELA Map</b>
-</p>
+| FFT Analysis | Noise Residual | ELA Map |
+|---|---|---|
+| <img src="readme_images/FFT.png" width="250"/> | <img src="readme_images/Noise.png" width="250"/> | <img src="readme_images/ELA.png" width="250"/> |
 
 ---
 
@@ -158,7 +147,21 @@ The original pretrained ResNet50 architecture was modified to support forensic f
 
 The model learns both visual and forensic patterns simultaneously.
 
+
 ---
+
+
+# 📈 Training and Validation Performance Summary
+
+| Epoch | Validation Accuracy (%) | Average Loss |
+|---|---|---|
+| Epoch 1 | 98.00% | 0.1886 |
+| Epoch 2 | 98.04% | 0.0542 |
+| Epoch 3 | 98.08% | 0.0202 |
+
+
+---
+
 
 # 📊 Results
 
@@ -173,9 +176,23 @@ The model learns both visual and forensic patterns simultaneously.
 
 
 🧩 Confusion Matrix
-<p align="center"> <img src="readme_images/confusion_matrix_table.png" width="750"/> </p> <p align="center"> <b>Confusion Matrix for AI vs Real Image Classification</b> </p>
+<p align="center"> <img src="readme_images/confusion_matrix.png" width="750"/> </p> <p align="center"> <b>Confusion Matrix for AI vs Real Image Classification</b> </p>
+
 
 ---
+
+# 🎯 Final Prediction Results
+
+<p align="center">
+  <img src="readme_images/final_prediction_results.png" width="1000"/>
+</p>
+
+<p align="center">
+  <b>Model predictions on real and AI-generated images with confidence scores</b>
+</p>
+
+---
+
 
 # 💻 Installation
 
@@ -196,13 +213,26 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run Locally
+## Download Trained Model
+
+Place the trained model file:
+
+```text
+ai_vs_real_resnet50.pth
+```
+
+inside the project root directory.
+
+---
+
+## Run Application
 
 ```bash
 python app.py
 ```
 
 ---
+
 
 # 👩‍💻 Author
 
