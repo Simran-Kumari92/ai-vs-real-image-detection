@@ -74,7 +74,7 @@ ELA Extraction
 Modified ResNet50
       ↓
 Prediction (AI / Real)
-
+```
 
 ---
 
